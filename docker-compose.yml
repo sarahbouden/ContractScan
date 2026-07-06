@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  contractscan:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      # Ollama tourne sur l'hôte, pas dans le conteneur : "localhost" depuis
+      # le conteneur désignerait le conteneur lui-même.
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

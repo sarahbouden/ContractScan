@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+
+# Rapports générés à l'exécution (pas de données de session persistées)
+rapport_comparaison.pdf
+test_rapport.pdf
+
+# Config locale de l'assistant, spécifique à la machine
+.claude/
