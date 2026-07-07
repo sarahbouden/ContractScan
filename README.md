@@ -101,15 +101,6 @@ d'un appel LLM par clause.
 4. Pour chaque clause : consulter la divergence détectée, choisir une décision (Accepter / Rejeter / À négocier) et ajouter un commentaire juridique.
 5. Générer et télécharger le rapport PDF final.
 
-## Captures d'écran
-
-*(à ajouter après la démo)*
-
-- `docs/screenshot_upload.png` — écran de chargement des deux contrats
-- `docs/screenshot_synthese.png` — synthèse et métriques globales
-- `docs/screenshot_clause.png` — revue clause par clause avec décision
-- `docs/screenshot_rapport.png` — extrait du rapport PDF généré
-
 ## Sécurité
 
 | Point | Détail |
